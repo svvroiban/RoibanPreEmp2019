@@ -114,9 +114,18 @@ li{
 }
 .side-nav{
 height: 500px;
-width: 150px;
-position: relative;
-background-color: white;
+width: 200px;
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+align-content: center;
+background-color:white;
+margin-left: 40px;
+position: absolute;
+margin-top: 100px;
+box-shadow: 9px 10px 26px 0px;
+
+
 
 
 }
