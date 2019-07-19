@@ -6,6 +6,9 @@ ul li {
   list-style: none;
   list-style-type: none;
 }
+ul {
+  padding: 0;
+}
 a {
   list-style-type: none;
   list-style: none;
@@ -60,6 +63,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .col3 ul li {
   display: inline;
   margin-left: 10px;
@@ -77,11 +81,11 @@ header {
   height: 36px;
 }
 .button {
-  width: 15%;
+  width: 13%;
   position: relative;
   background-color: rgba(99, 100, 216, 1);
   color: white;
-  text-align: center;
+
   padding: 10px;
   border-radius: 4px;
 }
@@ -102,9 +106,15 @@ header {
 .side-nav {
   box-shadow: 0px 2px 7px 4px rgba(121, 121, 121, 0.05);
   border-radius: 2px;
-  width: 80%;
+  width: 85%;
+  height: 66%;
   margin-top: -64px;
   background-color: white;
+}
+.pagination-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .filter {
   color: rgba(123, 123, 123, 1);
@@ -118,7 +128,6 @@ header {
   text-align: left;
   line-height: 16px;
   padding-left: 2px;
-  padding-right: 60px;
 }
 .filter-text-special {
   font-family: "Helvetica";
@@ -127,7 +136,11 @@ header {
   text-align: left;
   line-height: 16px;
   padding-left: 2px;
-  padding-right: 164px;
+  padding-right: 228px;
+}
+.side-nav-categories {
+  font-family: "Helvetica";
+  line-height: 2px;
 }
 .side-nav-subcategories {
   font-family: "Helvetica";
@@ -138,15 +151,16 @@ header {
   text-decoration: none;
   list-style: none;
 }
+dt {
+  padding-top: 11%;
+}
 .side-nav-subcategories-special {
   font-size: 15px;
   color: rgba(248, 203, 0, 1);
   text-align: center;
-  line-height: 10px;
   display: flex;
   text-decoration: none;
   list-style: none;
-  padding: 9px;
 }
 .inline {
   display: inline-block;
@@ -156,24 +170,25 @@ header {
 }
 .description-content {
   font-size: 27px;
-  padding-right: 519px;
 }
 .products {
-  height: 257px;
-  width: 151px;
+  min-width: 10rem;
+  max-width: 23%;
   border: solid 1px;
   border-color: rgba(121, 121, 121, 0.05);
-  display: inline;
-  margin-right: 55px;
   box-shadow: 0px 2px 7px 4px rgba(121, 121, 121, 0.05);
   margin-bottom: 10px;
 }
 .photo-products {
   width: 100%;
 }
+.special {
+  margin-top: 45px;
+}
 .content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .description-product {
   text-align: center;
@@ -184,15 +199,44 @@ header {
   font-size: 13px;
   color: rgba(248, 203, 0, 1);
   text-align: center;
-  margin-top: 20px;
+  margin-top: -6px;
 }
 .comercial {
-  top: 354px;
-  left: 53px;
-  height: 172px;
+  height: 37%;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 2px;
   box-shadow: 0px 8px 17px 4px rgba(121, 121, 121, 0.1);
-  width: 198px;
-  margin-left: 40px;
+  width: 85%;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .search {
+    width: 70%;
+  }
+  .button {
+    width: 25%;
+  }
+  .description-content {
+    padding-right: 170px;
+  }
+}
+@media (max-width: 992px) {
+  .search {
+    width: 60%;
+  }
+  .button {
+    width: 20%;
+    margin-right: 118px;
+  }
+
+  .filter-text-special {
+    padding-right: 60px;
+  }
+  hr {
+    width: 92%;
+    margin-right: 59px;
+  }
+  .description-content {
+    padding-right: 290px;
+  }
 }
