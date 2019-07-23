@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercitii</title>
+    <meta name="author" content="Valentin Roiban" />
+  </head>
+  <body>
+    <span
+      id="button"
+      style="width: 40px; height: 30px; background-color: green;"
+      >BUTTON
+    </span>
+    <img
+      src="https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428564257/article/R10171_image1"
+      alt=""
+      id="img"
+      style="display: none;"
+    />
+
+    <script>
+      var button = document.getElementById("button");
+      var img = document.getElementById("img");
+      button.addEventListener("click", below);
+      function below(event) {
+        img.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
