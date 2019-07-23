@@ -10,20 +10,60 @@
       style="width: 40px; height: 30px; background-color: green;"
       >BUTTON
     </span>
-    <img
-      src="https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428564257/article/R10171_image1"
-      alt=""
-      id="img"
-      style="display: none;"
-    />
+    <span id="button2" style="width: 40px; height: 30px; background-color: red;"
+      >BUTTON</span
+    >
+    <span
+      id="button3"
+      style="width: 40px; height: 30px; background-color: blue;"
+      >Also show image
+    </span>
+    <div class="parent">
+      <img
+        src="https://res.cloudinary.com/rebelwalls/image/upload/b_black,c_fill,fl_progressive,h_533,q_auto,w_800/v1428564257/article/R10171_image1"
+        alt=""
+        id="img"
+        style="display: none;"
+      />
+    </div>
 
     <script>
-      var button = document.getElementById("button");
+      var displayImage = document.getElementById("button");
+      var removeImage = document.getElementById("button2");
       var img = document.getElementById("img");
-      button.addEventListener("click", below);
-      function below(event) {
+      var body = document.querySelector("body");
+      displayImage.addEventListener("click", add);
+      function add(event) {
         img.style.display = "block";
+        if (document.getElementById("img") === null) {
+          alert("image does not exist");
+        }
+
+        // img.style.display = img.style.display === "block" ? "none" : "block";
+        // Daca se da click pe buton apare poza, iar daca se mai da un click, poza dispare.
       }
+      removeImage.addEventListener("click", remove);
+      function remove(event) {
+        img.parentNode.removeChild(img);
+        // img.style.display = "none";
+      }
+      function eventHandler(event) {
+        console.log(event.type + " on" + event.target);
+      }
+      body.addEventListener("click", eventHandler);
+
+      var blue = document.getElementById("button3");
+      blue.addEventListener("click", function add() {
+        displayImage.click();
+      });
+      img.addEventListener("click", function(event) {
+        console.log("imgclick");
+        parent[0].dispatchEvent(customEvent);
+      });
+
+      var parent = document.getElementsByClassName("parent");
+      var customEvent = new Event("build");
+      parent[0].addEventListener("build", function(event) {}, false);
     </script>
   </body>
 </html>
