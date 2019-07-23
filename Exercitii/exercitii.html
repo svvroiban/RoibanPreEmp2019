@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--First page ever-->
+    <title>Prima pagina</title>
+    <meta name="author" content="Valentin Roiban" />
+  </head>
+  <body>
+    <div id="page" style="padding: 20px; border:1px solid blue;">
+      <div id="container" style="padding: 20px; border:1px solid green;"></div>
+    </div>
+    <script>
+      // EXEMPLU 1
+      //   window.onload = function() {
+      //     alert("This page is loaded");
+      //     var link = document.getElementById("google-link");
+      //     link.onclick = function() {
+      //       console.log("Clicked on link");
+      //     };
+      //   };
+      //   window.onload = function() {
+      //     console.log("Second Load");
+
+      //   EXEMPLU 2
+      //   var link = document.getElementById("google-link");
+      //   link.addEventListener("mouseenter", function(event) {
+      //     console.log("Hover on link: ", event.target.text);
+      //   });
+
+      //   link.addEventListener(
+      //     "mouseenter",
+      //     function() {
+      //       console.log("Hover Once");
+      //     },
+      //     { once: true }
+      //   );
+
+      //   EXEMPLU 3
+      //   var link = document.getElementById("google-link");
+      //   link.addEventListener(
+      //     "mousedown",
+      //     function() {
+      //       console.log("Hover Once");
+      //     },
+      //     { passive: true }
+      //   );
+      //   link.removeEventListener(
+      //     "mouseleave",
+      //     function() {
+      //       console.log("Hover Once");
+      //     },
+      //     { capture: false }
+      //   );
+
+      //   EXEMPLU 4
+      //   var link = document.getElementById("google-link");
+      //   function eventHandler(event) {
+      //     console.log(event.type + " on:", event.target.nodeName);
+      //   }
+
+      //   window.addEventListener("click", eventHandler);
+      //   window.addEventListener("click", function() {
+      //     document.documentElement.requestFullscreen();
+      //   });
+
+      //   var event = new Event("build");
+
+      //   window.addEventListener(
+      //     "build",
+      //     function(event) {
+      //       console.log(event.type);
+      //     },
+      //     false
+      //   );
+      //   window.dispatchEvent(event);
+
+      var container = document.getElementById("container");
+      var page = document.getElementById("page");
+      function eventHandler(event) {
+        console.log(event.type + " on" + event.currentTarget.id);
+      }
+      container.addEventListener("click", eventHandler);
+      page.addEventListener("click", eventHandler, true);
+    </script>
+  </body>
+</html>
