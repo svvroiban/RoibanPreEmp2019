@@ -39,3 +39,56 @@ function media() {
   return sum / array.length;
 }
 media();
+
+var personalData = [
+  {
+    firstName: "Mihai",
+    lastName: "Alexandru",
+    fullName: function(firstName, lastName){
+
+        console.log("fullName.this");
+    }
+    
+  }
+];,
+  {
+    firstName: "Maria",
+    lastName: "Alina"
+    fullName: function(firstName, lastName){
+
+        console.log("this");
+    }
+    console.log("this");
+  },
+
+  {
+    firstName: "Delia",
+    lastName: "Fantas"
+    fullName: function(firstName, lastName){
+
+        console.log("this");
+    }
+    console.log("this");
+  }
+];
+
+
+let calculator = {
+    a:0,
+    b:0,
+    read: function(){
+        this.a=parseInt(prompt("Enter first number", 0));
+        this.b=parseInt(prompt("Enter first number", 0));
+    },
+    sum: function(){
+        return this.a + this.b;
+
+    },
+    inmultire: function(){
+        return this.a * this.b;
+    }
+
+};
+calculator.read();
+alert(calculator.sum());
+alert(calculator.inmultire());
