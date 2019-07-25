@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="style2.css" />
     <meta name="author" content="Valentin Roiban" />
     <link rel="stylesheet" href="./css/all.min.css" />
+    <link href="./hamburger.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="phone-menu">
         <div class="phone-category">
-          <img src="hamburger-icon.jpg" class="phone" />
-          <p class="inline">FACE</p>
+          <button class="hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <p class="inline menu">FACE</p>
         </div>
         <div class="phone-search">
           <img src="menu-search.png" class="phone" />
@@ -215,5 +220,6 @@
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

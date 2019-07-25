@@ -332,8 +332,20 @@ dt {
   }
   .phone {
     max-width: 2rem;
+    padding: 1rem 1rem 0 1rem;
   }
   header .container {
     display: none;
+  }
+  .menu {
+    color: white;
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .products {
+    flex: 0 0 calc(43% - 10px);
+    margin: 1.1rem;
+}
   }
 }
