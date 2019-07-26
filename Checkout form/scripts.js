@@ -125,11 +125,11 @@ let sub = function(passStringB, passStringS) {
   return sub.toString();
 };
 for (let product of productRows) {
-  let elementPrice = product.querySelector(".element_price");
+  let elementPrice = product.querySelector(".price");
   let removeButton = product.querySelector(".remove");
   let quantityElement = product.querySelector(".quantity");
   let addButton = product.querySelector(".add");
-  let totalElementPrice = product.querySelector(".total_element_price");
+  let totalElementPrice = product.querySelector(".quantity-price");
   let removeRowButton = product.querySelector(".remove-item");
 
   removeButton.addEventListener("click", function() {
