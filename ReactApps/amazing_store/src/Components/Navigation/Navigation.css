@@ -1,0 +1,16 @@
+.main-menu {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item {
+  list-style-type: none;
+  margin-left: 1.5rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
