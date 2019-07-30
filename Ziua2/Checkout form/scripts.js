@@ -72,32 +72,32 @@ function tryEnable() {
   }
 }
 
-// function decrement() {
-//   for (let i = 0; i < removeButtons.length; i++) {
-//     var button = removeButtons[i];
-//     button.addEventListener("click", function(event) {
-//       var decrement = parseInt(quantity[i].innerText) - 1;
-//       quantity[i].innerText = decrement;
-//     });
-//   }
-// }
-// decrement();
+function decrement() {
+  for (let i = 0; i < removeButtons.length; i++) {
+    var button = removeButtons[i];
+    button.addEventListener("click", function(event) {
+      var decrement = parseInt(quantity[i].innerText) - 1;
+      quantity[i].innerText = decrement;
+    });
+  }
+}
+decrement();
 
-// function increment() {
-//   for (let i = 0; i < addButtons.length; i++) {
-//     var button = addButtons[i];
-//     button.addEventListener("click", function(event) {
-//       var increment = parseInt(quantity[i].innerText) + 1;
-//       quantity[i].innerText = increment;
-//       totalProductPrices(i);
-//     });
-//   }
-// }
-// increment();
+function increment() {
+  for (let i = 0; i < addButtons.length; i++) {
+    var button = addButtons[i];
+    button.addEventListener("click", function(event) {
+      var increment = parseInt(quantity[i].innerText) + 1;
+      quantity[i].innerText = increment;
+      totalProductPrices(i);
+    });
+  }
+}
+increment();
 
-// function totalProductPrices(i) {
-//   let total =
-//     parseInt(productPrices[i].innerText) * parseInt(quantity[i].innerText);
-//   quantityPrice.innerText = total;
-//   return total;
-// }
+function totalProductPrices(i) {
+  let total =
+    parseInt(productPrices[i].innerText) * parseInt(quantity[i].innerText);
+  quantityPrice.innerText = total;
+  return total;
+}

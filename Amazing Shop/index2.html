@@ -2,16 +2,30 @@
 <html>
   <head>
     <!--First page ever-->
-    <title>Prima pagina</title>
+    <title>AmazingStore</title>
     <link rel="stylesheet" href="style2.css" />
     <meta name="author" content="Valentin Roiban" />
     <link rel="stylesheet" href="./css/all.min.css" />
+    <link href="./hamburger.css" rel="stylesheet" />
   </head>
   <body>
     <header>
+      <div class="phone-menu">
+        <div class="phone-category">
+          <button class="hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <p class="inline menu">FACE</p>
+        </div>
+        <div class="phone-search">
+          <img src="menu-search.png" class="phone" />
+        </div>
+      </div>
       <div class="container">
         <div class="column1">
-          <div>
+          <div class="logo">
             <h1>Amazing Store</h1>
           </div>
         </div>
@@ -19,9 +33,10 @@
           <div class="header-up">
             <div class="col1">
               <i class="fas fa-map-marker-alt"></i>
-
-              <span>My City:</span
-              ><a href="#" class="special-color">Los Angeles</a>
+              <div class="city">
+                <span> My City: </span
+                ><a href="#" class="special-color">Los Angeles</a>
+              </div>
             </div>
             <div class="col2">
               <i class="fas fa-phone-alt"></i>
@@ -104,16 +119,18 @@
               </li>
             </ul>
           </div>
-          <ul>
-            <li class="inline">
-              <p class="description-number">Showing 60 of 392</p>
-            </li>
-            <li class="inline"><img src="expand_arrow.png" /></li>
-            <li class="inline"><img src="expand_arrow2.png" /></li>
-          </ul>
+          <div class="showing-pages">
+            <ul>
+              <li class="inline">
+                <p class="description-number">Showing 60 of 392</p>
+              </li>
+              <li class="inline"><img src="expand_arrow.png" /></li>
+              <li class="inline"><img src="expand_arrow2.png" /></li>
+            </ul>
+          </div>
         </div>
-        <div class="pagination-filters">
-          <div>
+        <div class="main-filters">
+          <div class="description-filters">
             <ul class="filters">
               <li class="inline"><p class="filter">BRAND:</p></li>
               <li class="inline"><p class="filter-text">ALL BRANDS</p></li>
@@ -123,17 +140,21 @@
               <li class="inline"><p class="filter-text-special">30+</p></li>
             </ul>
           </div>
-          <ul>
-            <li class="inline"><p class="filter">SORT:</p></li>
-            <li class="inline"><p class="filter-text">BY POPULARITY</p></li>
-          </ul>
+          <div class="sort-filters">
+            <ul>
+              <li class="inline"><p class="filter">SORT:</p></li>
+              <li class="inline"><p class="filter-text">BY POPULARITY</p></li>
+            </ul>
+          </div>
         </div>
         <hr class="break" />
         <div class="content">
           <div class="products">
             <img src="product1.jpg" class="photo-products" />
             <p class="description-product">
-              Missha All Around Safe Block Sebum Zero Sun
+              Missha All Around<br />
+              Safe Block Sebum<br />
+              Zero Sun
             </p>
             <p class="description-price">$4.00</p>
           </div>
@@ -201,5 +222,6 @@
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
