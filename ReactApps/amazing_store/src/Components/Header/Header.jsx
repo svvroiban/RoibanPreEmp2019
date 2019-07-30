@@ -3,6 +3,8 @@ import "./Header.css";
 import Logo from "../Logo/Logo";
 import Contact from "../Contact/Contact";
 import Navigation from "../Navigation/Navigation";
+import Search from "../Search/Search";
+import Button from "../Button/Button";
 
 class Header extends React.Component {
   render() {
@@ -13,7 +15,10 @@ class Header extends React.Component {
           <Contact />
           <Navigation />
         </div>
-        <div className="header-bottom-container" />
+        <div className="header-bottom-container">
+          <Search />
+          <Button />
+        </div>
       </div>
     );
   }

@@ -1,0 +1,18 @@
+.fa-search {
+  color: #888;
+  vertical-align: middle;
+}
+.searchBar {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 49%;
+}
+.searchBar input {
+  width: 100%;
+  border: 0;
+}

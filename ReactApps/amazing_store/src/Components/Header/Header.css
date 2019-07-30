@@ -9,3 +9,8 @@
   display: flex;
   padding-top: 1rem;
 }
+.header-bottom-container {
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
