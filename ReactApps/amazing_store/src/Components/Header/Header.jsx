@@ -10,7 +10,22 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header-container">
-        <div className="header-top-container">
+        <div className="container">
+          <div className="column1 column1-spacing">
+            <Logo />
+          </div>
+          <div className="column2">
+            <div className="header-up">
+              <Contact />
+              <Navigation />
+            </div>
+            <div className="header-bottom">
+              <Search />
+              <Button />
+            </div>
+          </div>
+        </div>
+        {/* <div className="header-top-container">
           <Logo />
           <Contact />
           <Navigation />
@@ -18,7 +33,7 @@ class Header extends React.Component {
         <div className="header-bottom-container">
           <Search />
           <Button />
-        </div>
+        </div> */}
       </div>
     );
   }

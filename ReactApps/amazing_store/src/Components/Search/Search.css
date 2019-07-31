@@ -1,19 +1,19 @@
 .fa-search {
   color: #888;
   vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
 }
 .searchBar {
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  width: 52%;
-  margin-left: 20rem;
+  width: 75%;
+  position: relative;
 }
 .searchBar input {
   width: 100%;
-  border: 0;
+  padding: 12px 30px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
 }
