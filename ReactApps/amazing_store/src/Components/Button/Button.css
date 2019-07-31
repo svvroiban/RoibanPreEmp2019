@@ -1,25 +1,23 @@
-.myCart {
-  background: rgba(99, 100, 216, 1);
+.cart-button {
+  margin-left: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(99, 100, 216, 1);
+  color: white;
   border-radius: 5px;
-  width: 11rem;
-  margin-left: 2vw;
+  border: none;
+  padding-left: 20px;
+  cursor: pointer;
 }
-.myCart-text {
-  color: #fff;
-  text-decoration: none;
+
+.cart-button span {
+  margin: 0 15px;
 }
-.count {
-  background: rgba(57, 58, 177, 1);
-  padding: 0.92rem;
-  color: rgba(255, 255, 255, 0.8);
-  border-radius: 0 5px 5px 0;
-}
-.cart-icon {
-  color: rgba(255, 255, 255, 0.8);
-  margin-left: 0.5rem;
-  font-size: 1.5rem;
-  text-decoration: none;
+
+.cart-button div {
+  background-color: rgba(57, 58, 177, 1);
+  padding: 12px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

@@ -1,12 +1,7 @@
-.main-menu {
-  display: inline-flex;
-  justify-content: space-between;
-  margin: 0;
-}
-
 .menu-item {
   list-style-type: none;
   margin-left: 1.5rem;
+  display: inline;
 }
 
 .menu-item a {

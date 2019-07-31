@@ -3,10 +3,10 @@ import "./Search.css";
 
 const Search = () => {
   return (
-    <div className="searchBar">
+    <form className="searchBar">
       <i className="fas fa-search" />
       <input type="text" placeholder="Search products by SKU or name" />
-    </div>
+    </form>
   );
 };
 export default Search;
