@@ -10,7 +10,8 @@
   padding-left: 1rem;
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  width: 49%;
+  width: 52%;
+  margin-left: 20rem;
 }
 .searchBar input {
   width: 100%;

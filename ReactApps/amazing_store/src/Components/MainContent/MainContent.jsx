@@ -7,7 +7,7 @@ class MainContent extends React.Component {
     super(props);
     this.state = {
       categories: {
-        face: [
+        FACE: [
           "Creams&gel",
           "Patches",
           "Emulsions",
@@ -18,11 +18,11 @@ class MainContent extends React.Component {
           "Peeling",
           "Masks"
         ],
-        body: [],
-        foot: [],
-        hands: [],
-        hair: [],
-        makeup: []
+        BODY: [],
+        FOOT: [],
+        HANDS: [],
+        HAIR: [],
+        MAKEUP: []
       }
     };
   }
