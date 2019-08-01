@@ -1,11 +1,9 @@
 import React from "react";
 import "./MainContent.css";
 import SideBar from "../SideBar/SideBar";
-import expand_arrow from "../../Img/expand_arrow.png";
-import expand_arrow2 from "../../Img/expand_arrow2.png";
-const arrowLeft = expand_arrow;
-const arrowRight = expand_arrow2;
-
+import Filters from "../Filters/Filters";
+import Products from "../Products/Products";
+import comercial from "../../Img/comercial.jpg";
 class MainContent extends React.Component {
   constructor(props) {
     super(props);
@@ -53,29 +51,14 @@ class MainContent extends React.Component {
               showSubCategories={this.showSubCategories}
               toggle={this.state.toggle}
             />
+            <div className="ads">
+              <img src={comercial} alt="ads" className="comercial" />
+            </div>
           </div>
           <div className="column2">
-            <div className="pagination-filter">
-              <div>
-                <ul>
-                  <li className="inline">
-                    <p className="description-content">Creams & gels</p>
-                  </li>
-                </ul>
-              </div>
-              <div className="showing-pages">
-                <ul>
-                  <li className="inline">
-                    <p className="description-number">Showing 60 of 392</p>
-                  </li>
-                  <li className="inline">
-                    <img src={arrowLeft} />
-                  </li>
-                  <li className="inline">
-                    <img src={arrowRight} />
-                  </li>
-                </ul>
-              </div>
+            <Filters />
+            <div className="content">
+              <Products />
             </div>
           </div>
         </div>
