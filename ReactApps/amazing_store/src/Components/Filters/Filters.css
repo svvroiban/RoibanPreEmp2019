@@ -8,6 +8,7 @@
   color: rgba(123, 123, 123, 1);
   font-family: "Helvetica";
   font-size: 12px;
+  display: inline;
 }
 .filter-text {
   font-family: "Helvetica";
@@ -15,16 +16,14 @@
   color: rgba(99, 100, 216, 1);
   text-align: left;
   line-height: 16px;
-  padding-left: 2px;
+  display: inline;
 }
-.filter-text-special {
-  font-family: "Helvetica";
-  font-size: 12px;
-  color: rgba(99, 100, 216, 1);
-  text-align: left;
-  line-height: 16px;
-  padding-left: 2px;
+
+.filter li:last-child {
+  background-color: red;
+  padding: 0;
 }
+
 .inline {
   display: inline-block;
 }
@@ -34,14 +33,14 @@
 .description-content {
   font-size: 27px;
 }
-.content {
+.filter-space {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
-.comercial {
-  border: 1px solid rgba(255, 255, 255, 1);
-  border-radius: 2px;
-  box-shadow: 0px 8px 17px 4px rgba(121, 121, 121, 0.1);
-  width: 100%;
+.inline-space {
+  display: inline-block;
+  padding-right: 1rem;
+}
+.break {
+  margin-top: 1rem;
 }
