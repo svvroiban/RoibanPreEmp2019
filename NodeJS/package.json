@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.20.0",
-    "inquirer": "^6.5.0"
+    "inquirer": "^6.5.0",
+    "nodemon": "^1.19.1"
   }
 }
