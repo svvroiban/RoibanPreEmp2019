@@ -27,7 +27,7 @@ class Product extends React.Component {
         <p className="description-product">{this.props.name}</p>
         <p className="description-price">{this.props.price}</p>
         {this.state.addButtonOnHover && (
-          <button class="cart-hover">ADD TO CART</button>
+          <button className="cart-hover">ADD TO CART</button>
         )}
       </div>
     );
