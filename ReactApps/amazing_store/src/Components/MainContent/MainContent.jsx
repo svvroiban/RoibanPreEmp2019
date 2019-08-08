@@ -3,7 +3,7 @@ import "./MainContent.css";
 import SideBar from "../SideBar/SideBar";
 import Filters from "../Filters/Filters";
 import Products from "../Products/Products";
-import comercial from "../../Img/comercial.jpg";
+
 class MainContent extends React.Component {
   constructor(props) {
     super(props);
@@ -52,7 +52,7 @@ class MainContent extends React.Component {
               toggle={this.state.toggle}
             />
             <div className="ads">
-              <img src={comercial} alt="ads" className="comercial" />
+              <img src="/Img/comercial.jpg" alt="ads" className="comercial" />
             </div>
           </div>
           <div className="column2">

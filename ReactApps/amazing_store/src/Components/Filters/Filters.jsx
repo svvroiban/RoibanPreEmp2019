@@ -1,9 +1,5 @@
 import React from "react";
 import "./Filters.css";
-import expand_arrow from "../../Img/expand_arrow.png";
-import expand_arrow2 from "../../Img/expand_arrow2.png";
-const arrowLeft = expand_arrow;
-const arrowRight = expand_arrow2;
 const Filters = () => {
   return (
     <>
@@ -20,10 +16,10 @@ const Filters = () => {
               <p className="description-number">Showing 60 of 392</p>
             </li>
             <li className="inline">
-              <img src={arrowLeft} alt="arrow" />
+              <img src="/Img/expand_arrow.png" alt="arrow" />
             </li>
             <li className="inline">
-              <img src={arrowRight} alt="arrow" />
+              <img src="/Img/expand_arrow2.png" alt="arrow" />
             </li>
           </ul>
         </div>
